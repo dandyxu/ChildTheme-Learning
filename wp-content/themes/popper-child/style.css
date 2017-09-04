@@ -1,0 +1,53 @@
+/*
+Theme Name: Popper Child Theme
+Theme URI:
+Description:
+Author: Dandy Xu
+Author URI: https://github.com/dandyxu
+Template: popper
+Version: 1.0
+*/
+
+@import url("../popper/style.css");
+
+.site-title {
+    font-weight: 300;
+}
+
+.site-description {
+    font-style: italic;
+}
+
+.sticky::before {
+    content: "Sticky Post";
+    display: block;
+    font-size: 80%;
+    font-family: sans-serif;
+    text-align: right;
+    padding: .2em 1em;
+    background-color: hsl(0, 0%, 80%);
+}
+
+/* Footer Menu */
+.footer-navigation {
+    margin: -2em auto 4em;
+}
+
+.footer-navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* flex display */;
+    flex-wrap: wrap; /* wrap properly */
+}
+
+.footer-navigation a {
+    display: block;
+    padding: .5em 1em;
+    text-decoration: none;
+}
+
+.footer-navigation a:hover,
+.footer-navigation a:focus {
+    outline: 1px solid #fff;
+}
